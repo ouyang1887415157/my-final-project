@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UnityProject\\The Richest in Tang Dynasty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|d:\\unityproject\\the richest in tang dynasty\\assets\\scripts\\bigboardproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bigboardproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\diceroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\diceroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\tileproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tileproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\housemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\housemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\quizquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quizquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\playerproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\barchart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\barchart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|D:\\UnityProject\\The Richest in Tang Dynasty\\assets\\scripts\\textcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06CA4626-F441-7662-D9AB-331B72FD1E43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\textcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileImage.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\ProfileImage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ProfileImage.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\ProfileImage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ProfileImage.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwDIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T08:49:15.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BarChart.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\BarChart.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BarChart.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\BarChart.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BarChart.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T09:15:00.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiceRoller.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\DiceRoller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DiceRoller.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\DiceRoller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DiceRoller.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T02:08:20.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HouseManager.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\HouseManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HouseManager.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\HouseManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HouseManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T09:29:46.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuizQuestion.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\QuizQuestion.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\QuizQuestion.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\QuizQuestion.cs",
+              "RelativeToolTip": "Assets\\Scripts\\QuizQuestion.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwFEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T03:27:50.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TextColor.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\TextColor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TextColor.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\TextColor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TextColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T04:33:41.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TileProperties.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\TileProperties.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TileProperties.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\TileProperties.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TileProperties.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAgwK4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T09:15:28.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BigBoardProperties.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\BigBoardProperties.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BigBoardProperties.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\BigBoardProperties.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BigBoardProperties.cs",
+              "ViewState": "AgIAAAcEAAAAAAAAAAAowPkDAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T04:15:02.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerProperties.cs",
+              "DocumentMoniker": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\PlayerProperties.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerProperties.cs",
+              "ToolTip": "D:\\UnityProject\\The Richest in Tang Dynasty\\Assets\\Scripts\\PlayerProperties.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerProperties.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAJcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T06:37:31.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
