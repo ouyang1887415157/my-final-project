@@ -17,19 +17,19 @@ You can open it with Unity Hub with any Unity Version that is compatible with Un
 
 4. When a player lands on a land space occupied by another player, they must pay the landlord the corresponding rent. Each piece of land has different rent prices. (Rent is half of the land’s price)
 
-5, When a player lands on a land space occupied by himself, he can choose to buy a house on his own land. The price of the house is the price of the land, and the land’s price will be doubled. A new house will be generated on the land and the rent will be doubled accordingly.
+5. When a player lands on a land space occupied by himself, he can choose to buy a house on his own land. The price of the house is the price of the land, and the land’s price will be doubled. A new house will be generated on the land and the rent will be doubled accordingly.
 
 6. When landing on a "Notice Board”, the notice board will generate a random event and a player must execute its content. There are five events totally.
 
-8. When a player lands on the “ChangLe Fang”, the player should offer 2000 coins to guess whether the number of the dice is big or small. If the player guesses the number correctly, he can receive 4000 coins as reward.
+7. When a player lands on the “ChangLe Fang”, the player should offer 2000 coins to guess whether the number of the dice is big or small. If the player guesses the number correctly, he can receive 4000 coins as reward.
 
-9, When a player lands on the “black hotel”, the player can offer 2000 coins to buy one-time ownership of the black hotel. When the next player lands on the same tile of the black hotel, he needs to give 4000 coins to the owner. After that, the black hotel returns default stage where it does not have an owner.
+8. When a player lands on the “black hotel”, the player can offer 2000 coins to buy one-time ownership of the black hotel. When the next player lands on the same tile of the black hotel, he needs to give 4000 coins to the owner. After that, the black hotel returns default stage where it does not have an owner.
 
-10. When players go pass the “starting point” which is “Gate of Divine Prowess”, they can get 2000 coins as their salaries.
+9. When players go pass the “starting point” which is “Gate of Divine Prowess”, they can get 2000 coins as their salaries.
 
-11. The most important and distinguished feature of this game: when a player goes pass the imperial examination system (Tile 11), the player can answer several questions to get money as rewarded to teach them knowledge about the history of ancient Chinese.
+10. The most important and distinguished feature of this game: when a player goes pass the imperial examination system (Tile 11), the player can answer several questions to get money as rewarded to teach them knowledge about the history of ancient Chinese.
 
-12. The player can get bankrupted when their coins become lower than zero. When they get bankrupted, they cannot move again nor collect any rents. Player can only become winner if they are not bankrupted.
+11. The player can get bankrupted when their coins become lower than zero. When they get bankrupted, they cannot move again nor collect any rents. Player can only become winner if they are not bankrupted.
 
 ## Victory Condition
 Finally, in original monopoly game, all players except the winner go bankrupt, and they cannot sell their land or house to pay their debt.
