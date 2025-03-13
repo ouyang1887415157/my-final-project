@@ -10,7 +10,7 @@ public class DiceRoller : MonoBehaviour
 
     public float frameDuration = 0.1f; // The time every frame last
 
-
+    public Button NextRoundButton;
     public void RollDice(int finalFace)
     {
         StartCoroutine(RollDiceCoroutine(finalFace));
@@ -18,6 +18,12 @@ public class DiceRoller : MonoBehaviour
 
     private IEnumerator RollDiceCoroutine(int finalFace)
     {
+        if (NextRoundButton.gameObject.activeSelf)
+        {
+            NextRoundButton.gameObject.SetActive(false); // Set the nextButton to false
+        }
+
+
         float elapsed = 0f;
 
         // Perform the animation to roll the dice 
@@ -34,6 +40,11 @@ public class DiceRoller : MonoBehaviour
         }
 
         SetDiceImage(finalFace); // Show the final result
+
+        if (!NextRoundButton.gameObject.activeSelf)
+        {
+            NextRoundButton.gameObject.SetActive(true); // Set the nextButton to false
+        }
     }
 
     private void SetImageBackground(string imagePath) // Set the big board of image when the game start

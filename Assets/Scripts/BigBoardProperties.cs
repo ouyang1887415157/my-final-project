@@ -5,6 +5,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using static TileProperties;
 using UnityEngine.UI;
+using System;
 
 public class BigBoardProperties : MonoBehaviour
 {
@@ -46,6 +47,10 @@ public class BigBoardProperties : MonoBehaviour
 
     [SerializeField] GameObject ProfileController; // The empty game object to control the profile
 
+    public event Action GameHasStarted; // New event, when the game starts, this will trigger
+
+    public MusicManager musicManager; // The reference to the music manager
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -58,6 +63,8 @@ public class BigBoardProperties : MonoBehaviour
         SetImageOnBoard("Images/Tang_Dynasty"); // Set the big board of image when the game start
 
         SetImageOnQuestion("Images/Examination"); // Set the image of question in examination when the game start
+
+        musicManager = FindFirstObjectByType<MusicManager>(); // Get the music manager
 
     }
 
@@ -114,7 +121,11 @@ public class BigBoardProperties : MonoBehaviour
         {
             SetNextRoundButtonText("Next Round!"); // Set the button to be next round
             hasStartedGame = true;
-        }else 
+
+            GameHasStarted?.Invoke();
+
+        }
+        else 
         {
 
         }
@@ -140,6 +151,9 @@ public class BigBoardProperties : MonoBehaviour
     // Simulate dice rolling and player movement
     public void RollAndMove()
     {
+
+        // Hide the next round button
+        //NextRoundButton.gameObject.SetActive(false);
 
         ProfileController.GetComponent<ProfileImage>().SetProfile(currentPlayerIndex); // Set the profile to be the current player index
 
@@ -167,6 +181,8 @@ public class BigBoardProperties : MonoBehaviour
             SetImageOnBoard("Images/Injured");
             textMeshPro.text = $"Round {currentRound}\nPlayer {currentPlayerIndex + 1} {currentPlayer.getPlayerName()} is injured so he or she cannot move in this round! " +
                 $"The player can move in next round!"; // Notify players
+
+            musicManager.PlayHurtSound();
 
             currentPlayer.setInjured(false); // The injury is healed
 
@@ -290,6 +306,8 @@ public class BigBoardProperties : MonoBehaviour
         currentRound++; // Next Round
         currentPlayerIndex = (currentPlayerIndex + 1) % players.Count;
 
+        //NextRoundButton.gameObject.SetActive(true); // Set the next round button to be active
+
         Debug.Log($"Next Round {currentRound}"); //Debug Next Round
 
         Debug.Log($"Player {currentPlayerIndex + 1} will roll next"); //Debug Next Round
@@ -405,6 +423,7 @@ public class BigBoardProperties : MonoBehaviour
                     || tileProperties.GetTileNumber() == 24  || tileProperties.GetTileNumber() == 40)
                 {
                     TriggerNoticeBoard(playerProperties);
+
                 }
             }
             else if (tileProperties.GetTileType() == TileType.Land) {
@@ -447,7 +466,6 @@ public class BigBoardProperties : MonoBehaviour
 
                     SetImageOnBoard("Images/Buy_House");
 
-
                 }
 
                 else if (tileProperties.isOwned == true) // If the tile is a land and is owned by another player, then give the rent
@@ -458,6 +476,7 @@ public class BigBoardProperties : MonoBehaviour
 
                     PayRent(playerProperties, ownerProperties, tileProperties);
 
+                    musicManager.PlayBuyingSound();
                 }
 
             }
@@ -539,7 +558,10 @@ public class BigBoardProperties : MonoBehaviour
 
     public void ConfirmPurchase() // ConfirmPurchase for Yes Button
     {
+
         SetImageOnBoard("Images/Agreement"); // Set the big board of image to agree
+
+        musicManager.PlayBuyingSound(); // Play the sound of buying
 
         ProcessPurchase(true);
         HideButtons();
@@ -780,6 +802,8 @@ public class BigBoardProperties : MonoBehaviour
     {
         SetImageOnBoard("Images/Agreement");// Set the image of buying the house
 
+        musicManager.PlayBuyingSound();
+
         ProcessHousePurchase(true, tileProperties);
         isPurchasing = false;
         HideButtons(); // Hide buttons after the action
@@ -923,9 +947,16 @@ public class BigBoardProperties : MonoBehaviour
             // Show the black hotel information
             textMeshPro.text += $"\nThe big hotel is already owned by yourself.";
 
+            if (!NextRoundButton.gameObject.activeSelf) //If the nextRoundButton is not active, set it to active
+            {
+                NextRoundButton.gameObject.SetActive(true);
+            }
+
         }
         else if (tileProperties.isOwned && tileProperties.owner != playerProperties.gameObject)
         {
+            musicManager.PlayBuyingSound();
+
             SetImageOnBoard("Images/Pay_Coins");
 
             int blackHotelRent = 4000;
@@ -948,6 +979,11 @@ public class BigBoardProperties : MonoBehaviour
             tileProperties.UpdateMaterial();
 
             textMeshPro.text += $"\nNow you have paid 4000 coins.";
+
+            if (!NextRoundButton.gameObject.activeSelf) //If the nextRoundButton is not active, set it to active
+            {
+                NextRoundButton.gameObject.SetActive(true);
+            }
 
 
         }
@@ -988,6 +1024,8 @@ public class BigBoardProperties : MonoBehaviour
     {
         if (wantsToPay)
         {
+            musicManager.PlayBuyingSound();
+
             // Deduct the black market cost from the player
             playerProperties.minusCoinsNumber(2000);
             textMeshPro.text += $"\n{playerProperties.name} has paid 2000 coins to the black market!";
@@ -1018,7 +1056,7 @@ public class BigBoardProperties : MonoBehaviour
     private void TriggerNoticeBoard(PlayerProperties playerProperties)
     {
         // Create a random number generator
-        int randomEffect = Random.Range(1, 6); // Generate a random number between 1 and 5
+        int randomEffect = UnityEngine.Random.Range(1, 6); // Generate a random number between 1 and 5
 
         textMeshPro.text += $"\n{playerProperties.name} steps on the notice board!";
 
@@ -1043,6 +1081,8 @@ public class BigBoardProperties : MonoBehaviour
             case 3:
                 SetImageOnBoard("Images/Bandit");
 
+                musicManager.PlayHurtSound();
+
                 // Player is robbed by mountain bandits, loses 2000 coins, and gets injured, going to the hospital (Tile Number 21) for one turn
                 playerProperties.minusCoinsNumber(2000);
 
@@ -1060,6 +1100,8 @@ public class BigBoardProperties : MonoBehaviour
 
             case 4:
                 SetImageOnBoard("Images/Drugged");
+
+                musicManager.PlayHurtSound();
 
                 // Player mistakenly enters a black market and is drugged, loses 1000 coins and stays in place for one turn
                 playerProperties.minusCoinsNumber(1000);
