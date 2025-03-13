@@ -6,7 +6,7 @@ This is a game called "The richest in Tang Dynasty" game that aims to entertain 
 All the land tiles are named in the names of lands in Tang Dynasty in China, and there are over 50 Chinese knowledge questions waiting for the players in the Imperial Examination Hall.
 
 ## This is the Unity Version of my final project
-You can open it with Unity Hub with any Unity Version that is compatible with Unity 6000.0.26f1.
+You can open it with Unity Hub with any Unity Version that is compatible with Unity 6000.0.26f1. If you find there is no game in the file, find the game in the scenes folder.
 
 ## The Game process of "The richest in Tang Dynasty":
 1. Each player selects their preferred players. There are four players with different colors. The player will move in the sequence of age, from the youngest to the oldest. Initially, each player receives 20,000 coins, with the remaining funds considered as the "bank".
