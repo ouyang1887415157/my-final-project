@@ -5,10 +5,10 @@ This is the final project of my University of London Computer Science Degree. (Z
 This is a game called "The richest in Tang Dynasty" game that aims to entertain players with monopoly-like content and teach them knowledge about Chinese culture and history.
 All the land tiles are named in the names of lands in Tang Dynasty in China, and there are over 50 Chinese knowledge questions waiting for the players in the Imperial Examination Hall.
 
-# This is the Unity Version of my final project
+## This is the Unity Version of my final project
 You can open it with Unity Hub with any Unity Version that is compatible with Unity 6000.0.26f1.
 
-# The Game process of "The richest in Tang Dynasty":
+## The Game process of "The richest in Tang Dynasty":
 1. Each player selects their preferred players. There are four players with different colors. The player will move in the sequence of age, from the youngest to the oldest. Initially, each player receives 20,000 coins, with the remaining funds considered as the "bank".
 
 2. All players place their pieces at the starting point, and the youngest player begins by rolling the dice to move forward, following the direction of the arrow from the starting point.
@@ -31,6 +31,6 @@ You can open it with Unity Hub with any Unity Version that is compatible with Un
 
 12. The player can get bankrupted when their coins become lower than zero. When they get bankrupted, they cannot move again nor collect any rents. Player can only become winner if they are not bankrupted.
 
-# Victory Condition
+## Victory Condition
 Finally, in original monopoly game, all players except the winner go bankrupt, and they cannot sell their land or house to pay their debt.
 Since the game only lasts for shorter amount of time, the victory condition is changed into that the person with the greatest amount of wealth wins after dozens of rounds. In this case, the number of max rounds is 36 rounds. (The rounds can be changed according to the time players want to play) (Finally, the computer calculates the total amount of money which includes the prices of the lands and determines the winner)
